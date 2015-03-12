@@ -5,7 +5,9 @@
 # Update and install dependencies
 
 apt-get update
-apt-get install git live-build cdebootstrap devscripts -y
+apt-get install git live-build cdebootstrap devscripts apt-cacher-ng -y
+/etc/init.d/apt-cacher-ng start
+export http_proxy=http://localhost:3142/
 
 # Clone the default Kali live-build config.
 
@@ -99,4 +101,5 @@ sed -i 's/make-user boolean false/make-user boolean true/' config/debian-install
 echo "d-i passwd/root-login boolean false" >> config/debian-installer/preseed.cfg
 
 # Run the build!
+lb config --apt-http-proxy http://127.0.0.1:3142/
 lb build
