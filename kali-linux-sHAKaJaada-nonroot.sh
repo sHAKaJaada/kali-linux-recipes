@@ -56,6 +56,7 @@ gnome-control-center
 gnome-shell-extensions
 gnome-tweak-tool
 gparted
+gufw
 gzip
 htop
 hydra
