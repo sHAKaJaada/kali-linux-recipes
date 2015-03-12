@@ -6,7 +6,7 @@
 
 apt-get update
 apt-get install git live-build cdebootstrap devscripts apt-cacher-ng -y
-/etc/init.d/apt-cacher-ng start
+/etc/init.d/apt-cacher-ng restart
 export http_proxy=http://localhost:3142/
 
 # Clone the default Kali live-build config.
