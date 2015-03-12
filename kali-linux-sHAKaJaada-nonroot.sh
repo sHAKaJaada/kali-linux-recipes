@@ -20,7 +20,7 @@ apt-get source debian-installer
 cd live-build-config
 
 # The user doesn't need the kali-linux-full metapackage, we overwrite with our own basic packages.
-# This includes the debian-installer and the kali-linux-top10 metapackage (commented out for brevity of build, uncomment if needed).
+# This includes the debian-installer and the kali-linux-custom metapackage
 
 cat > config/package-lists/kali.list.chroot << EOF
 # kali-linux-top10
