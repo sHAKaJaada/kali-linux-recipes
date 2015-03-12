@@ -23,12 +23,15 @@ cd live-build-config
 # This includes the debian-installer and the kali-linux-top10 metapackage (commented out for brevity of build, uncomment if needed).
 
 cat > config/package-lists/kali.list.chroot << EOF
+# kali-linux-top10
 kali-root-login
 kali-defaults
+kali-desktop-gnome
 kali-menu
 kali-debtags
 kali-archive-keyring
-#kali-linux-top10
+kali-linux
+kali-desktop-live
 abiword
 alsa-tools
 alsa-utils
@@ -40,8 +43,12 @@ cryptsetup
 debian-installer-launcher
 desktop-base
 file-roller
+firmware-atheros
 firmware-b43legacy-installer
 firmware-b43-installer
+firmware-iwlwifi
+firmware-linux
+firmware-realtek
 florence
 gdebi
 gedit
