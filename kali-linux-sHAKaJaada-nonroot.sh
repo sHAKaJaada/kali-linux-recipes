@@ -46,8 +46,6 @@ florence
 gdebi
 gedit
 gnome-control-center
-gnome-core
-gnome-brave-icon-theme
 gnome-shell-extensions
 gnome-tweak-tool
 gparted
